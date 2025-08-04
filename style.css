@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.info q {
+    font-style: italic;
+}
+
+.container {
+    width: 96%;
+    background-color: white;
+    background-attachment: scroll;
+    /* background-size: contain; */
+    font-family: sans-serif;
+    padding: 20px;
+    background: white;
+    margin: auto;
+    height: 100%;
+    min-height: 100vh;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.267);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 20px;
+    /* border: 2px solid black; */
+    width: auto;
+}
+
+header {
+    width: auto;
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.5s ease;
+    background: rgb(230, 104, 59);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    transform: scale(1.05);
+    color: darkslategray;
+}
+
+.info h1 {
+    font-size: 55px;
+    color: rgb(36, 32, 30);
+}
+
+.info span {
+    color: rgb(230, 104, 59);
+}
+
+q {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.info a {
+    text-decoration: none;
+    color: #ffff;
+    background: rgb(36, 32, 30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover {
+    background: rgb(230, 104, 59);
+    transform: scale(1.05);
+}
+
+.image img {
+    height: 500px;
+    transition: 0.3s ease-in-out;
+}
+
+.me:hover {
+    transform: translateX(-10px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.icons a {
+    text-decoration: none;
+    color: #000;
+}
+
+.icons ion-icon {
+    margin-left: 7%;
+    color: #000;
+    margin-right: -60%;
+    font-size: 40px;
+    transition: .4s ease;
+}
+
+
+.icons ion-icon:hover {
+    color: rgb(59, 174, 209);
+}
+
+.info h3 {
+    animation: SlideInLeft 1s ease-in;
+}
+
+@keyframes SlideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.info h1 {
+    animation: FadeInDown 1s ease-in-out;
+}
+
+@keyframes FadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.me {
+    animation: SlideOutRight 1s ease-out;
+}
+
+@keyframes SlideOutRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+header {
+    animation: fadeindown 1s ease-in;
+}
+
+@keyframes fadeindown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.info a {
+    animation: FadeInUp 1s ease-in;
+}
+
+@keyframes FadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+}
+
+/* 
+.logo::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -10%;
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #28a745);
+    border-radius: 2px;
+} */
+
+#menu,
+#close,
+#nav {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        line-height: normal;
+    }
+
+    header {
+        gap: 10px;
+        /* display: none; */
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav.desktop {
+        display: none;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    li {
+        display: block;
+        list-style: none;
+        padding: 5px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    #menu {
+        display: block;
+        border: none;
+        font-weight: bold;
+        font-size: 18px;
+        background-color: transparent;
+        color: white;
+    }
+
+    #close {
+        color: white;
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .info h1 {
+        font-size: 40px;
+        /* display: none; */
+    }
+
+}

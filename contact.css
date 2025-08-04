@@ -1,0 +1,388 @@
+header {
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    /* margin: auto; */
+    margin-bottom: 10px;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.267);
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+
+#close {
+    display: none;
+}
+
+.logo {
+    font-size: 25px;
+    cursor: pointer;
+    color: darkslategray;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+nav a:hover {
+    color: rgb(230, 104, 59);
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    transition: 0.4s ease-in-out;
+    color: darkslategray;
+    padding: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: whitesmoke;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    /* max-width: 800px; */
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.267);
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.contact-content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    min-height: 500px;
+}
+
+.contact-info {
+    /* flex: 1; */
+    background: #f8f9fa;
+    padding: 40px;
+    min-width: 300px;
+}
+
+.contact-form {
+    /* flex: 1; */
+    padding: 40px;
+    min-width: 300px;
+}
+
+.contact-info h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.info-item {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-icon {
+    width: 40px;
+    height: 40px;
+    background: #667eea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-text h3 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.info-text p {
+    color: #666;
+    line-height: 1.3;
+}
+
+.social-links h3 {
+    color: #2c3e50;
+}
+
+.social-link {
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.social-link:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+}
+
+.contact-form h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e1e8ed;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 650px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 35px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 30px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    header {
+        gap: 10px;
+        /* display: none; */
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav.desktop {
+        display: none;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    li {
+        display: block;
+        list-style: none;
+        padding: 5px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: darkslategray;
+        font-weight: bold;
+    }
+
+    #menu {
+        display: block;
+        border: none;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: transparent;
+        color: darkslategray;
+    }
+
+    #close {
+        color: darkslategray;
+        font-size: 25px;
+        background-color: transparent;
+        border: none;
+
+    }
+}
+
+
+
+/* Animation */
+.container {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.info-item {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+.info-item:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.info-item:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.info-item:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.header p {
+    animation: SlideOutRight 0.6s ease-in;
+
+}
+
+@keyframes SlideOutRight {
+    from {
+        opacity: 0;
+        transform: translateX(90px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.header h1 {
+    animation: FadeInDown 0.6s ease-out;
+
+}
+
+@keyframes FadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-90px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav {
+    animation: fadeindown 0.6s ease-out;
+}
+
+@keyframes fadeindown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
